@@ -8,28 +8,61 @@
   
   <title>Frontend Mentor | Profile card component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <!-- Custom css & reset -->
+  <link rel="stylesheet" href="./Css/reset.css">
+  <link rel="stylesheet" href="./Css/style.css">
 </head>
 <body>
-  Victor Crest
-  26
-  London
 
-  80K
-  Followers
+ <article class="container">
 
-  803K
-  Likes
+  <main class="user-profile-card">
+    <!-- icard-images -->
+    <div class="card-header">
+      <div class="header-background-image">
+        <img src="./images/bg-pattern-card.svg" alt="background pattern card">
+      </div>
+      <div class="user-profile-picture">
+        <img src="./images/image-victor.jpg" alt="vector's profile picture">
+      </div>
+    </div>
 
-  1.4K
-  Photos
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    <!-- User-information -->
+    <div class="card-content">
+      <div class="user-info">
+        <h1 class="user-name">
+          Victor Crest <span class="age">26</span>
+        </h1>
+        <p class="location">London</p>
+      </div>
+
+      <div class="user-social-stats">
+        <div class="stats-wrapper">
+            <div class="stats">
+              <h2 class="value">80K</h2>
+              <p class="category">Followers</p>
+            </div>
+            <div class="stats">
+              <h2 class="value">803K</h2>
+              <p class="category">Likes</p>
+            </div>
+            <div class="stats">
+              <h2 class="value">1.4K</h2>
+              <p class="category">Photos</p>
+            </div>
+          </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- footer -->
+    <div class="attribution" role="contentinfo">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://www.frontendmentor.io/profile/iSoyecodes">Lindelwe Khumalo</a>.
+    </div> 
+    
+ </article>
+  
 </body>
 </html>
